@@ -9,6 +9,7 @@ if (isset($argv[1]) && isset($argv[2])){
  ### 輸入 containerID
  $containerID=trim($argv[1]);
  $sshLinking=getContainerDetail($containerID);
+ 
  ### 輸入 傳輸位置
  $localDir=trim($argv[2]); 
  $remoteDir=trim($argv[3]);

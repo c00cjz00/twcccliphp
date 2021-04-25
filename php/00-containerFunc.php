@@ -46,6 +46,7 @@ function scpLocal2Remote($sshLinking,$localDir,$remoteDir){
   $remoteHost=$tmpArr[0]; $remotePort=$tmpArr[1];
   $cmd="scp -o StrictHostKeyChecking=no -r -P $remotePort $localDir $remoteHost:$remoteDir";
   echo $cmd."\n";
+  //exit();
   $result=trim(shell_exec($cmd));
   return $result;
  }
